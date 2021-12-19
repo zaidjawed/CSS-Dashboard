@@ -1,0 +1,44 @@
+.sidebar {
+   color:$color-font;
+   text-align: center;
+   border-right: 2px solid $color-gray-dark-1;
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+   }
+
+   &__logo {
+      font-size: 3rem;
+      border-right: 4px solid $color-background;
+   }
+
+   &__icon-box {
+      margin-top: 4rem;
+   }
+
+   &__icon {
+      font-size: 2rem;
+      margin: 3rem 0;
+      border-right: 4px solid $color-background;
+
+      &-active {
+         color: $color-blue;
+         border-right: 4px solid $color-blue;
+         border-radius: 2px;
+      }
+   }
+
+   &__link {
+      color: inherit;
+
+      &-active {
+         color: $color-blue;
+      }
+   }
+
+   &__setting {
+      margin-top: 6rem;
+   }
+}

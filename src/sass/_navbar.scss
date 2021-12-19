@@ -1,0 +1,112 @@
+.navbar {
+   position: relative;
+   color: $color-font;
+   font-family: $font-primary;
+
+   &__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__head {
+      font-size: 3rem;
+      font-weight: 600;
+   }
+
+   &__p {
+      font-size: 1.8rem;
+      font-weight: 600;
+
+      span {
+         color: $color-blue;
+      }
+   }
+
+   &__profile {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      span {
+         margin: 0 1rem;
+      }
+   }
+
+   &__icon {
+      font-size: 2rem;
+   }
+
+   &__name {
+      font-size: 1.3rem;
+   }
+
+   &__img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+   }
+
+   &__link {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: #fff;
+      background: $color-blue;
+      border-radius: 2px;
+      padding: 0.8rem 2.5rem;
+   }
+
+   &__btns {
+      display: flex;
+      align-items: center;
+
+      margin-top: 1rem;
+   }
+
+   &__input-box {
+      position: relative;
+      width: 250px;
+      height: 40px;
+      margin-left: 1rem;
+   }
+
+   &__input {
+      position: absolute;
+      width: 250px;
+      height: 40px;
+      padding: 1rem;
+      background: transparent;
+      border-radius: 5px;
+      border: 1px solid $color-gray-dark-1;
+      color: inherit;
+
+      &:focus {
+         outline: none;
+      }
+
+      &::placeholder {
+         padding-left: 2.3rem;
+         font-size: 1.5rem;
+         font-weight: 600;
+         color: inherit;
+      }
+   }
+
+   label {
+      position: absolute;
+      font-size: 1.5rem;
+      font-weight: 600;
+      top: 8px;
+      left: 10px;
+      opacity: 0;
+      
+      i {
+         margin-right: 1rem;
+      }
+   }
+
+   input:placeholder-shown ~ label {
+      opacity: 1;
+   }
+}

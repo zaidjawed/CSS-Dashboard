@@ -1,0 +1,220 @@
+.main {
+   position: relative;
+   color: $color-font;
+
+   &__mid {
+      padding-right: 5rem;
+
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 2rem;
+   }
+
+   // &__boxes {
+   //    display: flex;
+   //    flex-direction: row;
+   //    align-items: center;
+   //    justify-content: space-between;
+   // }
+
+   &__box {
+      display: block;
+      width: 100%;
+      border: 2px solid $color-gray-dark-1;
+      border-radius: 10px;
+      padding: 2rem;
+
+      &-2 {
+         background: $color-blue;
+         color: #fff;
+      }
+   }
+
+   &__box-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__p {
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      a {
+         color: inherit;
+      }
+   }
+
+   &__box-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-top: 1rem;
+   }
+
+   &__number {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+   }
+
+   &__percentage {
+      font-size: 1.2rem;
+
+      i {
+         margin-right: 0.5rem;
+      }
+   }
+
+   &__graph-box {
+      grid-column: 1/3;
+      border: 2px solid $color-gray-dark-1;
+      border-radius: 10px;
+      padding: 2.5rem;
+   }
+
+   &__graph-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      div {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+      }
+   }
+
+   &__graph-p {
+      margin: 0 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+
+      a {
+         color: inherit;
+      }
+   }
+
+   &__graph-graph {
+      padding: 0 3rem;
+   }
+
+   &__progress-box {
+      border: 2px solid $color-gray-dark-1;
+      border-radius: 10px;
+      padding: 2.5rem;
+   }
+
+   &__progress-bar {
+      margin-top: 3rem;
+
+      div {
+         margin-bottom: 1rem;
+      }
+
+      p {
+         font-size: 1.5rem;
+      }
+   }
+
+   &__refral-box {
+      grid-column: 1/3;
+      border: 2px solid $color-gray-dark-1;
+      border-radius: 10px;
+      padding: 2.5rem;
+   }
+
+   &__refral-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   &__refral-right {
+      display: flex;
+      align-items: center;
+   }
+
+   &__refral-icon {
+      i {
+         font-size: 2rem;
+         color: $color-red;
+         margin-right: 1rem;
+      }
+   }
+
+   &__refral-red {
+      font-size: 1.5rem;
+      color: $color-red;
+      font-weight: 600;
+   }
+
+   &__refral-text {
+      font-size: 1.3rem;
+      font-weight: 600;
+   }
+
+   &__refral-p {
+      font-size: 1.5rem;
+   }
+
+   &__refral-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8rem;
+      text-align: center;
+
+      div:not(:last-child) {
+         border-right: 2px solid $color-gray-dark-1;
+         padding-right: 4rem;
+      }
+
+      .main__percentage {
+         color: $color-blue;
+      }
+   }
+
+   &__refral-btns {
+      text-align: center;
+      margin-top: 5rem;
+   }
+
+   &__refral-btn {
+      font-size: 1.3rem;
+      color: #fff;
+      margin: 0 1rem;
+      padding: 1.5rem 3rem;
+      border-radius: 2px;
+   }
+
+   &__pie {
+      border: 2px solid $color-gray-dark-1;
+      border-radius: 10px;
+      padding: 2.5rem;
+   }
+
+   &__pie-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__pie-p {
+      font-size: 1.3rem;
+      font-weight: 600;
+
+      a {
+         color: inherit;
+      }
+   }
+
+   &__pie-graph {
+      margin-top: 3rem;
+   }
+}
